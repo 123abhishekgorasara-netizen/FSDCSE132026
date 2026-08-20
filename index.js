@@ -118,6 +118,48 @@
 //     }, 1000);
 // }, 1000);
 
-console.log("One ")
-setTimeout(() => console.log("Two "), 1000)
-console.log("Three ")
+// console.log("One ")
+// setTimeout(() => console.log("Two "), 1000)
+// console.log("Three ")
+
+// function sumofsqrt(a,b){
+//     return Math.sqrt(a)+Math.sqrt(b);
+// }
+// console.log("Sum of square root of two numbers = " + sumofsqrt(25,36));
+
+// function sumofsqrtWithName(name,clbk){
+//     const result = clbk(25,36);
+//     return name + " The sum of square root of two numbers = " + result;
+// }
+// console.log(sumofsqrtWithName("Abhishek", sumofsqrt));
+
+// Promise in js
+// const myPromise = new Promise((resolve, reject) => {
+//     let username = "Abhishek";
+//     let password = "12345";
+//     if(username === "Abhishek" && password === "12345"){
+//         resolve("Login Successful");
+//     } else {
+//         reject("Login Failed")
+//     }
+// })
+// myPromise.then((msg) => {
+//     console.log(msg)
+// }).catch(msg => {
+//     console.log(msg)
+// })
+// .finally(() => 
+//     console.log("All resource has been closed"))
+ async function loginHandler(){
+    try{
+            const loginStatus=await myPromise;
+            console.log(loginStatus)
+    }
+    catch(e){
+        console.log(e)
+    }
+    finally{
+        console.log("Closing all the open resources...")
+    }
+  }
+  loginHandler();
