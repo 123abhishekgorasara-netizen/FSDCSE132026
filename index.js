@@ -150,16 +150,58 @@
 // })
 // .finally(() => 
 //     console.log("All resource has been closed"))
- async function loginHandler(){
+//  async function loginHandler(){
+//     try{
+//             const loginStatus=await myPromise;
+//             console.log(loginStatus)
+//     }
+//     catch(e){
+//         console.log(e)
+//     }
+//     finally{
+//         console.log("Closing all the open resources...")
+//     }
+//   }
+//   loginHandler();
+
+
+const container=document.getElementById('container');
+console.log(container)
+const button=document.getElementById('btn');
+console.log(button)
+const h2=document.getElementById('data');
+const loader=document.getElementById('loader');
+
+
+async function fetchData(){
     try{
-            const loginStatus=await myPromise;
-            console.log(loginStatus)
-    }
-    catch(e){
-        console.log(e)
+        loader.innerHTML='Fetching data...';
+    const serverData=await fetch('https://fakestoreapi.com/products')
+                       const jsonData=await serverData.json();
+    // console.log(jsonData[1].title)
+
+    let table='<table>';
+
+
+    h2.innerHTML=`${jsonData[1].title}`;
+
+    let table ='<table>
+    ${
+        jsonData.map((ele) => (
+            <td></td>
+        )
+
+            '
+
+    }catch(e){
+        console.log("Error is:"+e)
+        loader.innerHTML='Error is'+e;
     }
     finally{
-        console.log("Closing all the open resources...")
+        loader.innerHTML='';
+
     }
-  }
-  loginHandler();
+
+}
+button.addEventListener('click',fetchData);
+
