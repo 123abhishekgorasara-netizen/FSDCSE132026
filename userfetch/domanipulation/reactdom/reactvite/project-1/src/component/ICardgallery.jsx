@@ -12,9 +12,9 @@ function ICardgallery() {
         maxWidth: '1000px'
       }}
     >
-      <ICard name="Abhay" rollNo="24" email="abhay@example.com" />
-      <ICard name="John" rollNo="25" email="john@example.com" />
-      <ICard name="Jane" rollNo="26" email="jane@example.com" />
+      <ICard Name="Abhishek" rollNo="24" email="abhishek@example.com" />
+      <ICard Name="Abhijeet" rollNo="25" email="abhijet@example.com" />
+      <ICard Name="Ankit" rollNo="26" email="ankit@example.com" />
     </div>
   )
 }

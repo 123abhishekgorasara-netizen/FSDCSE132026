@@ -18,8 +18,8 @@ function ICard(props) {
           }}
         >
           <img
-            src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
-            alt="Cat"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt7YW7ReSPYUPWaGoJDtALJS-CGthC2_jUycmgfPUuQ&s=10"
+            alt="Abesec"
             style={{
               width: '100%',
               height: '140px',
